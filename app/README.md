@@ -1,6 +1,6 @@
 # Noice:Hobby Matching App
 
-Match your hobbies with user friends and family 's hobbies.  
+Match your hobbies with your friends and family 's hobbies.  
 
 ## Getting Started
 

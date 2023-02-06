@@ -15,13 +15,12 @@ class SignUp extends StatefulWidget {
 
 class _SignUpState extends State<SignUp> {
   Widget googleLoginButton() {
-    return OutlineButton(
+    return RaisedButton(
         onPressed: () {
           auth.signInWithGoogle();
         },
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(45)),
         splashColor: Colors.grey,
-        borderSide: BorderSide(color: Colors.grey),
         child: Padding(
             padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
             child: Row(

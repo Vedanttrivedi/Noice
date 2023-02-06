@@ -1,6 +1,6 @@
-# app
+# Noice:Hobby Matching App
 
-A new Flutter project.
+Match your hobbies with user friends and family 's hobbies.  
 
 ## Getting Started
 

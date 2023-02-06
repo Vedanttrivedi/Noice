@@ -1,7 +1,4 @@
 import 'package:app/authmodel.dart';
-import 'package:app/collab.dart';
-import 'package:app/profile.dart';
-import 'package:app/showtemplates.dart';
 import 'package:app/usermatch.dart';
 import 'package:app/users.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -232,7 +229,7 @@ class _HobbyMatchState extends State<HobbyMatch> {
                     child: Column(
                       children: [
                         Image.asset(users1[index].imageurl,
-                            width: 150, height: 150),
+                            width: 180, height: 180),
                         Text(this.users1[index].name,
                             style:
                                 TextStyle(fontSize: 30, color: Colors.white)),
@@ -304,27 +301,10 @@ class _HobbyMatchState extends State<HobbyMatch> {
                   padding: EdgeInsets.all(15),
                   itemCount: this.users1.length + 1,
                   itemBuilder: (context, index) {
-                    return index == 0 ? SearchField() : Carder(index);
+                    return Carder(index);
                   }),
             );
           });
     }
-  }
-
-  Widget SearchField() {
-    return Container(
-      margin: EdgeInsets.all(10),
-      child: TextFormField(
-        onChanged: (val) {
-          setState(() {
-            users1.where((element) {
-              var n = element.firstName.toLowerCase();
-              print(n);
-            });
-          });
-        },
-        decoration: InputDecoration(labelText: "search by first name"),
-      ),
-    );
   }
 }

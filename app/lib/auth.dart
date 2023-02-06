@@ -28,5 +28,6 @@ class _AuthState extends State<Auth> {
     } else if (showFirst == 4) {
       return WhyAccount(change: this.change);
     }
+    return null;
   }
 }
